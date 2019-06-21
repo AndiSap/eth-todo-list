@@ -1,6 +1,22 @@
 pragma solidity >=0.4.17;
 
 contract TodoList {
-    // unit is available in whole blockchain
     uint public taskCount = 0;
+
+    struct Task {
+        uint id;
+        string content;
+        bool completed;
+    }
+
+    mapping(uint => Task) public tasks;
+
+    constructor() public {
+        createTask("Some default content");
+    }
+
+    function createTask(string memory _content) public {
+        taskCount++;
+        tasks[taskCount] = Task(taskCount, _content, false);
+    }
 }
