@@ -2,6 +2,7 @@ App = {
   contracts: {},
   loading: false,
 
+
   load: async () => {
    // load web3 lib to connect to blockchain
    await App.loadWeb3();
@@ -120,6 +121,13 @@ App = {
       loader.hide();
       content.show();
     }
+  },
+
+  createTask: async () => {
+    App.setLoading(true);
+    const content = $('#newTask').val();
+    await App.todoList.createTask(content);
+    window.location.reload(); // refresh the webpage
   }
 }
 
