@@ -2587,12 +2587,12 @@
         }
       },
       "links": {},
-      "address": "0xDeF80d40d7FDB31aD5DB7aa128AfBB51f410d73e",
-      "transactionHash": "0x92f899a1468a56744cd635b8e55c2bceef4f1fba39adeabe62339fcfd45e3061"
+      "address": "0xfe2c65E8DfbcCcD3F205082AA2c888bed40944fd",
+      "transactionHash": "0x1ea602877505899fbe445ef1922ccb03cb0127f1a8f5278d1372ef7dbf2d0199"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-06-21T17:09:32.867Z",
+  "updatedAt": "2019-06-30T15:18:04.875Z",
   "devdoc": {
     "methods": {}
   },
